@@ -390,6 +390,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-proposal-decorators@npm:^7.24.7":
+  version: 7.24.7
+  resolution: "@babel/plugin-proposal-decorators@npm:7.24.7"
+  dependencies:
+    "@babel/helper-create-class-features-plugin": ^7.24.7
+    "@babel/helper-plugin-utils": ^7.24.7
+    "@babel/plugin-syntax-decorators": ^7.24.7
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 75aa5ff5537d5ff77f0e52eb161a2f67c7d2bfd8f2000be710dedb1dd238b43ce53d2f734f84bda95b3f013b69de126403f84167f4eddb1d35e8f26257ee07c8
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-proposal-export-default-from@npm:^7.0.0":
   version: 7.24.7
   resolution: "@babel/plugin-proposal-export-default-from@npm:7.24.7"
@@ -477,6 +490,17 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 3e80814b5b6d4fe17826093918680a351c2d34398a914ce6e55d8083d72a9bdde4fbaf6a2dcea0e23a03de26dc2917ae3efd603d27099e2b98380345703bf948
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-syntax-decorators@npm:^7.24.7":
+  version: 7.24.7
+  resolution: "@babel/plugin-syntax-decorators@npm:7.24.7"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.24.7
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: dc303bcc1f5df61638f1eddc69dd55e65574bd43d8a4a098d3589f5a742e93a4ca3a173967b34eb95e4eaa994799b4c72bfed8688036e43c634be7f24db01ac5
   languageName: node
   linkType: hard
 
@@ -2648,6 +2672,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react@npm:^16.9.41":
+  version: 16.14.61
+  resolution: "@types/react@npm:16.14.61"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": ^0.16
+    csstype: ^3.0.2
+  checksum: b873d026fda1cdace4eaa1817d16c75cf2de5d8b54383e927b7669659937599cc18512a752c8989da1f441f2e332488d8c9858945172db3eea62d8411f2d6a61
+  languageName: node
+  linkType: hard
+
+"@types/scheduler@npm:^0.16":
+  version: 0.16.8
+  resolution: "@types/scheduler@npm:0.16.8"
+  checksum: 6c091b096daa490093bf30dd7947cd28e5b2cd612ec93448432b33f724b162587fed9309a0acc104d97b69b1d49a0f3fc755a62282054d62975d53d7fd13472d
+  languageName: node
+  linkType: hard
+
 "@types/semver@npm:^7.3.12":
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
@@ -2880,6 +2922,7 @@ __metadata:
   resolution: "RNInversifySample@workspace:."
   dependencies:
     "@babel/core": ^7.20.0
+    "@babel/plugin-proposal-decorators": ^7.24.7
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
     "@react-native/babel-preset": 0.75.3
@@ -2889,12 +2932,18 @@ __metadata:
     "@types/react": ^18.2.6
     "@types/react-test-renderer": ^18.0.0
     babel-jest: ^29.6.3
+    babel-plugin-transform-typescript-metadata: ^0.3.2
     eslint: ^8.19.0
+    inversify: ^6.0.2
+    inversify-hooks: ^2.1.6
+    inversify-props: ^2.2.6
+    inversify-react: ^1.1.1
     jest: ^29.6.3
     prettier: 2.8.8
     react: 18.3.1
     react-native: 0.75.3
     react-test-renderer: 18.3.1
+    reflect-metadata: ^0.2.2
     typescript: 5.0.4
   languageName: unknown
   linkType: soft
@@ -3317,6 +3366,15 @@ __metadata:
   dependencies:
     "@babel/plugin-syntax-flow": ^7.12.1
   checksum: fd52aef54448e01948a9d1cca0c8f87d064970c8682458962b7a222c372704bc2ce26ae8109e0ab2566e7ea5106856460f04c1a5ed794ab3bcd2f42cae1d9845
+  languageName: node
+  linkType: hard
+
+"babel-plugin-transform-typescript-metadata@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "babel-plugin-transform-typescript-metadata@npm:0.3.2"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.0.0
+  checksum: 15aa2a05c9ec2817155cc15746e55e0e06dd57762e7fc1eea168ce9a65fd89372174ecc7506434b6abde367a264c5953f27468a0c3dcab2fb4a14bec1c719536
   languageName: node
   linkType: hard
 
@@ -5380,6 +5438,50 @@ __metadata:
   dependencies:
     loose-envify: ^1.0.0
   checksum: cc3182d793aad82a8d1f0af697b462939cb46066ec48bbf1707c150ad5fad6406137e91a262022c269702e01621f35ef60269f6c0d7fd178487959809acdfb14
+  languageName: node
+  linkType: hard
+
+"inversify-hooks@npm:^2.1.6":
+  version: 2.1.6
+  resolution: "inversify-hooks@npm:2.1.6"
+  dependencies:
+    "@types/react": ^16.9.41
+    inversify-props: ^2.2.6
+    react: ^16.13.1
+  checksum: b7fda8af41f29518d7a70a7046735c009a67e7f3edad79398df0a48e62be1200e591516f90c2dc3435fe1ded6e6039ef8ca6d28d8595beb546e694f19cb4a413
+  languageName: node
+  linkType: hard
+
+"inversify-props@npm:^2.2.6":
+  version: 2.2.6
+  resolution: "inversify-props@npm:2.2.6"
+  dependencies:
+    inversify: ^5.0.1
+  checksum: 97ca6c9fd60573df034c94624a1bb58542778ddac16cd1da0d235a1e0ad257852af63310e7c44a37c34da1994b177c107ebbf1c3e056b5dc4dfb665c30b1fd0c
+  languageName: node
+  linkType: hard
+
+"inversify-react@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "inversify-react@npm:1.1.1"
+  peerDependencies:
+    inversify: ^5.0.5 || ^6.0.1
+    react: ^16.3.0 || ^17.0.0 || ^18.0.0
+  checksum: dc84875ba90e3f7da10cec991d336eee5638706e144fa4831cf7216541d0e9dc0faf8531de63f68b87ac268bf67fc84a1014fbe20cf869d051f8bdf7d9768bb1
+  languageName: node
+  linkType: hard
+
+"inversify@npm:^5.0.1":
+  version: 5.1.1
+  resolution: "inversify@npm:5.1.1"
+  checksum: 22d201647b572024333c58bed8ac929da4724a4c0c8a261ecc261a180afcb899359013fafb8d87ce4d606000149fb4590dc5c8278b9feb544a5f69a6159e4ffb
+  languageName: node
+  linkType: hard
+
+"inversify@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "inversify@npm:6.0.2"
+  checksum: 9aafd41de12cb1dc1cebe6e0cc51fbda8a0f9cbcdc024874a7bc078f1317bb3e0f4a51cb28b2f3c69cc00f3e1f16e77f6e153c063b19da56f3592903dc21552c
   languageName: node
   linkType: hard
 
@@ -7732,7 +7834,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -7907,6 +8009,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react@npm:^16.13.1":
+  version: 16.14.0
+  resolution: "react@npm:16.14.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
+  languageName: node
+  linkType: hard
+
 "readable-stream@npm:^3.4.0":
   version: 3.6.2
   resolution: "readable-stream@npm:3.6.2"
@@ -7949,6 +8062,13 @@ __metadata:
     source-map: ~0.6.1
     tslib: ^2.0.1
   checksum: 03cc7f57562238ba258d468be67bf7446ce7a707bc87a087891dad15afead46c36e9aaeedf2130e2ab5a465244a9c62bfd4127849761cf8f4085abe2f3e5f485
+  languageName: node
+  linkType: hard
+
+"reflect-metadata@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "reflect-metadata@npm:0.2.2"
+  checksum: a66c7b583e4efdd8f3c3124fbff33da2d0c86d8280617516308b32b2159af7a3698c961db3246387f56f6316b1d33a608f39bb2b49d813316dfc58f6d3bf3210
   languageName: node
   linkType: hard
 
